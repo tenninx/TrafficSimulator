@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="TS.UI.Controls.ctrlTrafficLight"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:be="http://schemas.microsoft.com/expression/2010/drawing"
+             Name="objTrafficLight"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="30">
+    <Grid>
+        <be:BlockArrow x:Name="objArrow" Width="30" Height="30" Stroke="Yellow" Fill="Blue" RenderTransformOrigin="0.5,0.5">
+            <be:BlockArrow.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="{Binding ElementName=objTrafficLight, Path=Angle }" />
+                    <TranslateTransform/>
+                </TransformGroup>
+            </be:BlockArrow.RenderTransform>
+        </be:BlockArrow>
+        <TextBlock Text="{Binding ElementName=objTrafficLight, Path=CountDown }" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" />
+    </Grid>
+</UserControl>

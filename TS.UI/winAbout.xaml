@@ -1,0 +1,23 @@
+﻿<Window x:Class="TS.UI.winAbout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Traffic Simulator by Group A" Height="620" Width="600" ShowInTaskbar="False" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" WindowStyle="None" BorderThickness="3" BorderBrush="Black">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+        
+            <Image Source="Images/logo.png" />
+
+            <Image Source="Images/team_a.png" Width="300" Margin="0,20,0,20" />
+
+            <Image Source="Images/ameer.png" Width="400" />
+            <Image Source="Images/yasmin.png" Width="400" />
+            <Image Source="Images/heelup.png" Width="400" />
+            <Image Source="Images/hoon.png" Width="400" />
+            <Image Source="Images/phanu.png" Width="400" />
+            <Image Source="Images/alan.png" Width="400" />
+
+            <Image Source="Images/close.png" Height="40" Margin="0,20,0,0" ToolTip="Return to Simulation" Mouse.MouseUp="btnClose_MouseUp" />
+
+        </StackPanel>
+    </Grid>
+</Window>

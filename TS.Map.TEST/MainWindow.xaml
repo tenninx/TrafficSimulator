@@ -1,0 +1,17 @@
+﻿<Window x:Class="TS.Map.TEST.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Map Editor" Height="800" Width="1200" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Canvas>
+        <Canvas Name="cvMain" Width="1000" Height="700" Background="#FFF2F2F2" MouseMove="cvMain_MouseMove">
+            
+        </Canvas>
+        <TextBox Canvas.Left="164" Canvas.Top="726" Height="23" Name="txtResult" Width="979" />
+        <TextBox Canvas.Left="27" Canvas.Top="726" Height="23" Name="txtFirstno" Width="120" Text="0,0" />
+        <Button Canvas.Left="1019" Canvas.Top="12" Content="Display Chunks" Height="25" Name="button1" Width="147" />
+        <Button Canvas.Left="1019" Canvas.Top="54" Content="Get Intersection" Height="21" Name="button2" Width="145" Click="button2_Click" />
+        <Button Canvas.Left="1021" Canvas.Top="81" Content="Get Route" Height="21" Name="button3" Width="145" Click="button3_Click" />
+        
+        <TextBlock x:Name="labCoor" Canvas.Left="1060" Canvas.Top="121" />
+    </Canvas>
+</Window>

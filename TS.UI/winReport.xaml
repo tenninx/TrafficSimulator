@@ -1,0 +1,53 @@
+﻿<Window x:Class="TS.UI.winReport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simulation Report" Height="400" Width="420" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" ShowInTaskbar="False" Loaded="winReport_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="Total Simulation Time" FontSize="14" Grid.Row="0" Grid.Column="0" Margin="2" VerticalAlignment="Center" />
+        <TextBlock x:Name="labSimTime" FontSize="18" FontWeight="UltraBold" Foreground="Red" Grid.Row="0" Grid.Column="1" Margin="2" VerticalAlignment="Center" />
+
+        <TextBlock Text="Total Vehicle Simulated" FontSize="14" Grid.Row="1" Grid.Column="0" Margin="2" VerticalAlignment="Center" />
+        <TextBlock x:Name="labTotalVehicles" FontSize="18" FontWeight="UltraBold" Foreground="Blue" Grid.Row="1" Grid.Column="1" Margin="2" VerticalAlignment="Center" />
+
+        <TextBlock Text="Total Reckless Vehicles" FontSize="14" Grid.Row="2" Grid.Column="0" Margin="2" VerticalAlignment="Center" />
+        <TextBlock x:Name="labTotalReckless" FontSize="18" FontWeight="UltraBold" Foreground="Red" Grid.Row="2" Grid.Column="1" Margin="2" VerticalAlignment="Center" />
+
+        <TextBlock Text="Affected by Reckless Drivers" FontSize="14" Grid.Row="3" Grid.Column="0" Margin="2" VerticalAlignment="Center" />
+        <TextBlock x:Name="labVehiclesSlowed" FontSize="18" FontWeight="UltraBold" Foreground="Blue" Grid.Row="3" Grid.Column="1" Margin="2" VerticalAlignment="Center" />
+
+        <TextBlock Text="Vehicle Completed Journey" FontSize="14" Grid.Row="4" Grid.Column="0" Margin="2" VerticalAlignment="Center" />
+        <TextBlock x:Name="labCompleted" FontSize="18" FontWeight="UltraBold" Foreground="Red" Grid.Row="4" Grid.Column="1" Margin="2" VerticalAlignment="Center" />
+
+        <TextBlock Text="Average Journey Time" FontSize="14" Grid.Row="5" Grid.Column="0" Margin="2" VerticalAlignment="Center" />
+        <TextBlock x:Name="labAvgJourney" FontSize="18" FontWeight="UltraBold" Foreground="Blue" Grid.Row="5" Grid.Column="1" Margin="2" VerticalAlignment="Center" />
+
+        <TextBlock Text="Average Speed" FontSize="14" Grid.Row="6" Grid.Column="0" Margin="2" VerticalAlignment="Center" />
+        <TextBlock x:Name="labAvgSpeed" FontSize="18" FontWeight="UltraBold" Foreground="Red" Grid.Row="6" Grid.Column="1" Margin="2" VerticalAlignment="Center" />
+
+        <TextBlock Text="Congestion Rate" FontSize="14" Grid.Row="7" Grid.Column="0" Margin="2" VerticalAlignment="Center" />
+        <TextBlock x:Name="labConRate" FontSize="18" FontWeight="UltraBold" Foreground="Blue" Grid.Row="7" Grid.Column="1" Margin="2" VerticalAlignment="Center" />
+
+        <TextBlock Text="Total (Average) Threads" FontSize="14" Grid.Row="8" Grid.Column="0" Margin="2" VerticalAlignment="Center" />
+        <TextBlock x:Name="labTotalThreads" FontSize="18" FontWeight="UltraBold" Foreground="Red" Grid.Row="8" Grid.Column="1" Margin="2" VerticalAlignment="Center" />
+
+        <TextBlock Text="Total (Average) Events" FontSize="14" Grid.Row="9" Grid.Column="0" Margin="2" VerticalAlignment="Center" />
+        <TextBlock x:Name="labTotalEvents" FontSize="18" FontWeight="UltraBold" Foreground="Blue" Grid.Row="9" Grid.Column="1" Margin="2" VerticalAlignment="Center" />
+    </Grid>
+</Window>
